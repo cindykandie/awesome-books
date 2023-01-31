@@ -1,5 +1,5 @@
 {
-  "name": "awesome-books",
+  "name": "book-app-es6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cindykandie/awesome-books.git"
+    "url": "git+https://github.com/Sammy3000/Book-app-ES6.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cindykandie/awesome-books/issues"
+    "url": "https://github.com/Sammy3000/Book-app-ES6/issues"
   },
-  "homepage": "https://github.com/cindykandie/awesome-books#readme",
+  "homepage": "https://github.com/Sammy3000/Book-app-ES6#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
