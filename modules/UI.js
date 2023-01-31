@@ -24,15 +24,14 @@ class UI {
     removeBtn.classList.add('remove-btn');
     removeBtn.type = 'submit';
     removeBtn.innerText = 'Remove';
-    if((createTitle !== "")||(createAuthor !== "")){
+    if ((createTitle !== '') || (createAuthor !== '')) {
       createButton.appendChild(removeBtn);
       bookContent.appendChild(createTitle);
       bookContent.appendChild(createAuthor);
       row.appendChild(bookContent);
       row.appendChild(removeBtn);
       list.appendChild(row);
-    } 
-
+    }
   }
 
   static deleteBook(el) {
