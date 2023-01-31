@@ -27,14 +27,7 @@ body {
   gap: 0px;
 }
 
-h1 {
-  font-size: 25px;
-  font-family: sans-serif;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 2rem;
-  text-decoration: underline;
-}
+
 .main-nav {
   display: flex;
   width: 95%;
@@ -83,6 +76,61 @@ h1 {
   text-align: right;
   
 }
+h1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem;
+  text-decoration: underline;
+}
+.all{
+  display:flex;
+  flex-direction: column;
+}
+table {
+  display: flex;
+  width: 75%;
+  max-width: 700px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 2px;
+  border-collapse: collapse;
+  margin: 1.5rem auto;
+  font-size: 0.9em;
+}
+tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+tr {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.booksContainer tbody tr:nth-of-type(odd) {
+  background-color: var(--warmShade);
+}
+
+.remove-btn{
+  box-shadow: 1px 2px 2px var(-deepShade);
+  background-color: var(--warmShade);
+  color: var(--deepShade);
+  margin-right: auto;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.remove-btn:hover{
+  background-color: whitesmoke;
+}
 form#enter {
   margin: 1rem 0;
   display: none;
@@ -103,19 +151,7 @@ form#enter {
   padding: 2rem 0;
 }
 
-table {
-  display: flex;
-  width: 75%;
-  align-items: center;
-  justify-content: center;
-}
 
-tbody {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 
 input {
   width: 100%;
@@ -164,99 +200,6 @@ input:focus {
   font-family: var(--font2);
 }
 
-.booksContainer {
-  border: 3px solid black;
-  border-radius: 2px;
-  border-collapse: collapse;
-  margin: 1.5rem auto;
-  font-size: 0.9em;
-}
-
-tr {
-  display: flex;
-  gap: 30px;
-  justify-content: space-evenly;
-}
-
-.booksContainer tbody tr:nth-of-type(odd) {
-  background-color: var(--warmShade);
-}
-
-.remove-btn:hover {
-  box-shadow: 1px 1px 2px var(--warmShade);
-  background-color: var(--deepShade);
-  color: var(--whiteShade);
-  margin-right: auto;
-}
-
-.booksContainer tbody .delete {
-  background-color: var(--warmShade);
-  border-radius: 2px;
-  border: 1px solid var(--deepShade);
-  color: var(--deepShade);
-  font-weight: bold;
-  margin-left: 200px;
-  padding: 0.2rem;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-
-
-.name {
-  line-height: 3rem;
-  font-weight: 700;
-}
-
-.menu {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.menu li {
-  list-style: none;
-}
-
-.menu li a {
-  line-height: 3rem;
-  text-decoration: none;
-  color: var(--deepShade);
-  cursor: pointer;
-  font-family: var(--font1);
-}
-
-.menu li a:hover {
-  color: var(--warmShade);
-  text-decoration: underline;
-  text-decoration-color: var(--deepShade);
-}
-
-.date {
-  display: flex;
-  width: 95%;
-  margin: 0.2rem auto;
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-align: right;
-}
-
-footer {
-  position: absolute;
-  width: 98%;
-  bottom: 1rem;
-  left: 0%;
-  right: 0;
-  margin: 0 auto;
-  height: 3rem;
-  border: 2px solid var(--deepShade);
-}
-
-footer h3 {
-  line-height: 3rem;
-  text-align: center;
-  padding: 0 20px;
-}
-
 .contact {
   display: none;
   flex-direction: column;
@@ -265,3 +208,25 @@ footer h3 {
   gap: 2rem;
   font-size: 1.1rem;
 }
+.contact ul {
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  width: 98%;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3rem;
+  border: 2px solid var(--deepShade);
+}
+
+footer h3 {
+  line-height: 3rem;
+  text-align: left;
+  padding: 0 20px;
+}
+
+
