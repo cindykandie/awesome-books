@@ -14,24 +14,21 @@ class UI {
     row.classList.add('row');
     const bookContent = document.createElement('div');
     bookContent.classList.add('book-content');
-
     const createTitle = document.createElement('td');
     const createAuthor = document.createElement('td');
-    createTitle.innerHTML = `${book.title}`;
-    createAuthor.innerHTML = `by ${book.author}`;
+    createTitle.textContent = `${book.title}`;
+    createAuthor.textContent = `by ${book.author}`;
     const createButton = document.createElement('td');
     const removeBtn = document.createElement('button');
     removeBtn.classList.add('remove-btn');
     removeBtn.type = 'submit';
     removeBtn.innerText = 'Remove';
-    if ((createTitle !== '') || (createAuthor !== '')) {
       createButton.appendChild(removeBtn);
       bookContent.appendChild(createTitle);
       bookContent.appendChild(createAuthor);
       row.appendChild(bookContent);
       row.appendChild(removeBtn);
       list.appendChild(row);
-    }
   }
 
   static deleteBook(el) {

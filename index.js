@@ -3,7 +3,6 @@ import Store from './modules/store.js';
 import UI from './modules/UI.js';
 import {
   contactSection, linksAdd, linksAll, linksContact,
-
   bookList, addList, contactList, allSection, inputSection,
 } from './modules/variables.js';
 import displayTime from './modules/time.js';
@@ -20,7 +19,6 @@ document.querySelector('#enter').addEventListener('submit', (e) => {
 });
 
 document.querySelector('#bookList').addEventListener('click', (e) => {
-  e.preventDefault();
   UI.deleteBook(e.target);
   Store.removeBook(e.target.parentElement.firstChild.firstChild.textContent);
 });
