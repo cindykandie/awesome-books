@@ -108,7 +108,7 @@ tbody {
 }
 tr {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-between;
   padding: 5px 10px;
 }
@@ -116,12 +116,15 @@ tr {
 .booksContainer tbody tr:nth-of-type(odd) {
   background-color: var(--warmShade);
 }
-
+.book-content{
+  display: flex;
+  gap: 5px;
+}
 .remove-btn{
   box-shadow: 1px 2px 2px var(-deepShade);
   background-color: var(--warmShade);
   color: var(--deepShade);
-  margin-right: auto;
+  margin-right: 0;
   border-radius: 5px;
   font-weight: bold;
   padding: 0.2rem;

@@ -20,9 +20,10 @@ document.querySelector('#enter').addEventListener('submit', (e) => {
 });
 
 document.querySelector('#bookList').addEventListener('click', (e) => {
+  e.preventDefault();
   UI.deleteBook(e.target);
-  Store.removeBook(e.target.parentElement.previousElementSibling
-    .previousElementSibling.previousElementSibling.textContent);
+  Store.removeBook(e.target.parentElement.firstChild.firstChild.textContent);
+  
 });
 
 bookList.addEventListener('click', (e) => {
